@@ -9,6 +9,6 @@ while [[ true ]]; do
 	vol=$($DIR/volume.sh)
     ip_public="󰩟 :$(curl ifconfig.me)"
 	disk_home=$($DIR/disk_home.sh)
-	xsetroot -name "$mem $wifi_ip $ip_public $fecha_hora $vol"
+	xsetroot -name "$mem $fecha_hora $vol"
 	sleep 1
 done
