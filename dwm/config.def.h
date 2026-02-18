@@ -207,7 +207,7 @@ static const Key keys[] = {
     {MODKEY, XK_Return, spawn, SHCMD("st")},
     {MODKEY, XK_w, spawn, SHCMD("firefox")},
     {MODKEY, XK_c, spawn, SHCMD("galculator")},
-    {MODKEY, XK_a, spawn, SHCMD("leafpad")},
+    {MODKEY, XK_a, spawn, SHCMD("mousepad")},
     {MODKEY|Mod1Mask, XK_Return, spawn, SHCMD("terminator")},
 
     /* volume control */
