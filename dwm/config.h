@@ -212,6 +212,7 @@ static const Key keys[] = {
     {MODKEY, XK_Up, spawn, SHCMD("pactl set-sink-volume @DEFAULT_SINK@ +10%") },
     {MODKEY, XK_Down, spawn, SHCMD("pactl set-sink-volume @DEFAULT_SINK@ -10%") },
     {MODKEY|Mod1Mask, XK_space, spawn, SHCMD("pactl set-sink-mute @DEFAULT_SINK@ toggle") },
+
     /* Controles de Radio */
     {MODKEY, XK_n, spawn, SHCMD("~/.local/bin/dwm-radio.sh toggle") },
     {MODKEY|Mod1Mask, XK_Right, spawn, SHCMD("~/.local/bin/dwm-radio.sh next")   },
