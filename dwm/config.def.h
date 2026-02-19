@@ -207,8 +207,15 @@ static const Key keys[] = {
     {MODKEY, XK_Return, spawn, SHCMD("st")},
     {MODKEY, XK_w, spawn, SHCMD("firefox")},
     {MODKEY, XK_c, spawn, SHCMD("galculator")},
-    {MODKEY, XK_a, spawn, SHCMD("mousepad")},
+    {MODKEY, XK_g, spawn, SHCMD("geany")},
     {MODKEY|Mod1Mask, XK_Return, spawn, SHCMD("terminator")},
+    {MODKEY, XK_Up, spawn, SHCMD("pactl set-sink-volume @DEFAULT_SINK@ +10%") },
+    {MODKEY, XK_Down, spawn, SHCMD("pactl set-sink-volume @DEFAULT_SINK@ -10%") },
+    {MODKEY|Mod1Mask, XK_space, spawn, SHCMD("pactl set-sink-mute @DEFAULT_SINK@ toggle") },
+    /* Controles de Radio */
+    {MODKEY, XK_n, spawn, SHCMD("~/.local/bin/dwm-radio.sh toggle") },
+    {MODKEY|Mod1Mask, XK_Right, spawn, SHCMD("~/.local/bin/dwm-radio.sh next")   },
+    {MODKEY|Mod1Mask, XK_Left, spawn, SHCMD("~/.local/bin/dwm-radio.sh prev")   },
 
     /* volume control */
     {0, XF86XK_AudioRaiseVolume, spawn,
